@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basketball Stats Assistant</title>
+    <link rel="stylesheet" href="styles-home.css">
+    <script src="script-home.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Basketball Stats Assistant 🏀</h1>
+    </div>
+
+    <div class="instructions">
+        <p>
+            To begin, add a player with their details and track their game statistics. Use the form below:
+        </p>
+    </div>
+
+   
+    
+    <div class="player-form">
+        <input type="text" id="playerName" placeholder="Player Name">
+        <input type="number" id="playerNumber" placeholder="Player Number">
+        <input type="text" id="playerPosition" placeholder="Player Position">
+        <div class="enemy-box">
+            <input type="checkbox" id="setEnemy" name="setEnemy" />
+            <label for="setEnemy">Set As Opponent</label>
+        </div>
+        <button onclick="addPlayer()">Add Player</button>
+    </div>
+    
+    <div class = "player-list">
+        <h2> Player List:</h2>
+        <table id ="playersTable">
+            <thead>
+                <tr>
+                    <th> Player Name </th>
+                    <th> Player Number </th>
+                    <th> Player Position </th>
+                    <th> Team </th>
+                </tr>
+            
+            </thead>
+            <tbody>
+    <!-- the input list ? of the player will be added in javascript from here -->
+            
+            </tbody>
+        </table>
+    </div>
+        <hr>
+        <br> 
+    
+    <button onclick="remove()">Remove</button>
+    <br><br><br>
+    <button onclick="resetStats()">Reset</button>
+    <br><hr><br><br>
+    <p>  <a href="live.html"><button class="startbutton" type="button" onClick="startGame()"> START GAME!!</button> </a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

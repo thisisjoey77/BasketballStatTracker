@@ -1,0 +1,253 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+.stat-txt {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.player-circle {
+    border-radius: 50%;
+    width: 6VW;
+    height: 6VW;
+    border-width: 3px;
+    transition-duration: 0.4s;
+    background-color: aquamarine;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+
+.player-circle:hover {
+    cursor: pointer;
+}
+
+.fit-circle:hover {
+    cursor: pointer;
+}
+
+.glow {
+    background: green;
+}
+
+.subs {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.in {
+    background: purple;
+}
+
+.non-selected {
+    background: lightblue;
+}
+
+.fit-circle { 
+    border-style: dashed;
+}
+
+.out {
+    background: lightblue;
+}
+
+.selected {
+    background: red;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 1,485.4px;
+    height: 753.2px;
+    grid-template-columns:0px 0px 0px;
+    grid-template-rows: 0px 0px 0px;
+
+    background-image: url("basketBallCourt.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.scoreBoard{
+    background: black;
+    color: white;
+    width: 25VW;
+    height: 16VW;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    position: absolute;
+    left: 37%;
+
+}
+
+.scoreName{
+    font-size: 2.4vw;
+    text-align: center;
+    display: inline-block;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.scoreScore{
+    font-size: 4vw;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    background-color: aqua;
+    border:0.3vw solid black;
+    width: 6vw;
+}
+.score1{
+    background: black;
+    color: lawngreen;
+    margin-right: 1vw;
+}
+.score2{
+    background: black;
+    color: red;
+    margin-left: 1vw;
+}
+
+
+.court-circle {
+    border-radius: 50%;
+    width: 6VW;
+    height: 6VW;
+    border-width: 3px;
+    position:absolute;
+}
+
+.player-circle:hover {
+    background: yellow;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 100%; 
+    height:50VW; 
+    grid-template-columns:0px 0px 0px;
+    grid-template-rows: 0px 0px 0px;
+    background-color: aquamarine;
+    background-image: url("basketBallCourt.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:relative;
+    
+}
+
+.timer {
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+.active-circle {
+    background: conic-gradient(blue var(--percentage), white 0);
+    border-radius: 50%;
+    animation: timer 4s infinite linear;
+}
+.active-circle-e {
+    
+}
+
+.main-court {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    transform: scale(0.75);
+}
+
+.pm{
+    width: 25px;
+}
+
+.in {
+    background: grey;
+}
+
+.stats{
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF9500;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.finish {
+    background-color: #FF9500;
+    border: none;
+    border-radius:5%;
+    color: white;
+    padding: 10px;
+}
+
+.start {
+    background-color: lawngreen;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+
+.stop {
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+    color: white;
+}
+
+.overtime {
+    background: red;
+    color: white;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.timePie { 
+            position: absolute; 
+            border-radius: 50%; 
+            background-image: conic-gradient( 
+                pink 70deg,   
+                grey 0); 
+        } 
+.timePie { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+
+.down{
+    padding-left: 110%;
+    font-size: 2vw;
+}
+.down2{
+    position: relative;
+    right: 4.75VW;
+    font-size: 2vw;
+}

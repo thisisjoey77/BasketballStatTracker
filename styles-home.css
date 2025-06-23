@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+.header h1 {
+    color: #FF9500;
+}
+
+.instructions, .player-form {
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.player-form input[type="text"],
+.player-form input[type="number"] {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(50% - 22px);
+}
+
+.enemy-box {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.player-form button {
+    padding: 10px 20px;
+    background-color: #FF9500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.startbutton:hover{
+    cursor:pointer;
+    background-color: #ff9500;
+    color:var(#1c1c1c);
+    transition: 0.8s ease all; }
+
+
+.player-form button:hover {
+    background-color: #e69500;
+}
+
+.player-list h2 {
+    margin-top: 20px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF9500;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background-color: #FF9500;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}

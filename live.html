@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Normal</title>
+    <link rel="stylesheet" href="styles-live.css" />
+    <script src="script-live.js"></script>
+</head>
+<body onload="launchFunc()">
+    <h1 id="quarterNum">Q1</h1>
+    <div class="main-court">
+        <div class="scoreboard">
+            <div class="snap-circles grid-container">
+        <span class="fit-circle court-circle non-selected" id="f0" onClick="placeCheck(0)"><div id="name0" class="down"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f1" onClick="placeCheck(1)"><div id="name1" class="down"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f2" onClick="placeCheck(2)"><div id="name2" class="down"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f3" onClick="placeCheck(3)"><div id="name3" class="down"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f4" onClick="placeCheck(4)"><div id="name4" class="down"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f5" onClick="placeCheck(5)"><div id="name5" class="down2"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f6" onClick="placeCheck(6)"><div id="name6" class="down2"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f7" onClick="placeCheck(7)"><div id="name7" class="down2"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f8" onClick="placeCheck(8)"><div id="name8" class="down2"></div></span>
+        <span class="fit-circle court-circle non-selected" id="f9" onClick="placeCheck(9)"><div id="name9" class="down2"></div></span>
+        <div class="scoreBoard">
+            <h1 class="scoreName" contentEditable="true" oninput="changeParty(0)" id="homeName">HOME</h1>
+            <h1 class="scoreName" contentEditable="true">GUEST</h1>
+            <div class="scoreScore score1" id="homeScore">0</div>
+            <div class="scoreScore score2" id="awayScore">0</div>
+            <div class="timer boardTime" id="time">
+                <h1>08:00</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+    <div id="overspace">
+    </div>
+        <div class="timer">
+            <button class="button start" onclick="startTime()">start timer</button>
+            <button class="button stop" onclick="stopTime()">stop timer</button>
+            <button class="finish" onClick = "finishGame()">Next Quarter</button>   
+        </div>
+    <table class="stats" id="match">
+        <thead>
+            <tr>
+                <th class="stats">Player</th>
+                <th class="stats">MIN</th>
+                <th class="stats">2PTS</th>
+                <th class="stats">3PTS</th>
+                <th class="stats">FT</th>
+                <th class="stats">PTS</th>
+                <th class="stats">AST</th>
+                <th class="stats">REB</th>
+                <th class="stats">STL</th>
+                <th class="stats">BLK</th>
+                <th class="stats">FOUL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p1 class = "stat-txt" id="name"></p1>
+                </td>
+                <td>
+                    <p1 class = "stat-txt" id="min"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(2)">-</button>
+                    <button class="button pm" onclick="add(2)">+</button>
+                    <p1 class = "stat-txt" id="tpts"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(3)">-</button>
+                    <button class="button pm" onclick="add(3)">+</button>
+                    <p1 class = "stat-txt" id="thpts"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(4)">-</button>
+                    <button class="button pm" onclick="add(4)">+</button>
+                    <p1 class = "stat-txt" id="ft"></p1>
+                </td>
+                <td>
+                    <p1 class = "stat-txt" id="pts"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(5)">-</button>
+                    <button class="button pm" onclick="add(5)">+</button>
+                    <p1 class = "stat-txt" id="ast"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(6)">-</button>
+                    <button class="button pm" onclick="add(6)">+</button>
+                    <p1 class = "stat-txt" id="reb"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(7)">-</button>
+                    <button class="button pm" onclick="add(7)">+</button>
+                    <p1 class = "stat-txt" id="stl"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(8)">-</button>
+                    <button class="button pm" onclick="add(8)">+</button>
+                    <p1 class = "stat-txt" id="blk"></p1>
+                </td>
+                <td>
+                    <button class="button pm" onclick="subtract(9)">-</button>
+                    <button class="button pm" onclick="add(9)">+</button>
+                    <p1 class = "stat-txt" id="foul"></p1>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <div class="subs" id=sub-col>
+            
+        </div>
+    <div id="deselect"></div>
+    <div id="page-change">
+    </div>
+</body>
+</html>
